@@ -1,0 +1,50 @@
+                                                Aufgabe 1:
+Erstelle eine Klasse "Person" mit den folgenden Attributen:
+
+name (String)
+age (int)
+address (String)
+Die Klasse sollte auch entsprechende Getter- und Setter-Methoden für jedes Attribut enthalten.
+
+Zusätzlich soll die Klasse eine Methode "introduceYourself()" haben, die den Namen, das Alter und die Adresse der Person
+ausgibt.
+
+
+                                                Aufgabe 2
+Erstelle eine Klasse "Student", die von der Klasse "Person" erbt. Ein Student hat zusätzlich zu den Attributen einer
+Person auch ein Studienfach (studySubject, String).
+
+Die Klasse "Student" sollte einen Konstruktor haben, der den Namen, das Alter, die Adresse und das Studienfach eines
+Studenten akzeptiert und die entsprechenden Attribute initialisiert.
+
+Füge der Klasse "Student" außerdem eine Methode "study()" hinzu, die den Namen des Studenten und das Studienfach
+ ausgibt, z.B. "Max studiert Informatik".
+
+Implementiere die Klasse "Student" und teste sie, indem du einen Studenten erstellst und seine Informationen ausgibst.
+
+
+                                               Aufgabe 3:
+Erstelle eine abstrakte Klasse "Shape" (Form) mit einer abstrakten Methode "calculateArea()" (Fläche berechnen).
+Diese abstrakte Methode hat keine Implementierung in der Klasse "Shape", da die konkrete Implementierung von der
+spezifischen Form abhängt.
+
+Implementiere die abstrakte Klasse "Shape" und erstelle zwei konkrete Klassen, die von "Shape" erben:
+"Rectangle" (Rechteck) und "Circle" (Kreis). Jede dieser Klassen sollte die Methode "calculateArea()" überschreiben
+und die Fläche entsprechend für das jeweilige geometrische Objekt berechnen.
+
+
+                                            Aufgabe 4:
+Erstelle eine Klasse "BankAccount" (Bankkonto), um ein Bankkonto zu modellieren. Das Bankkonto sollte ein Attribut
+"balance" (Kontostand) haben, das den aktuellen Kontostand des Kontos speichert.
+
+Die Klasse "BankAccount" sollte folgende Methoden haben:
+
+getBalance(): Diese Methode gibt den aktuellen Kontostand zurück.
+setBalance(): Diese Methode akzeptiert einen Parameter balance und setzt den Kontostand auf den angegebenen Wert.
+Zusätzlich gibt sie eine Nachricht aus, dass der Kontostand aktualisiert wurde.
+deposit(): Diese Methode akzeptiert einen Parameter amount und fügt den angegebenen Betrag zum Kontostand hinzu.
+Zusätzlich gibt sie eine Nachricht aus, dass der Betrag zum Kontostand hinzugefügt wurde.
+withdraw(): Diese Methode akzeptiert einen Parameter amount und zieht den angegebenen Betrag vom Kontostand ab.
+Wenn der Kontostand ausreicht, wird der Betrag abgezogen und eine Nachricht ausgegeben, dass der Betrag vom Kontostand
+abgezogen wurde. Andernfalls wird eine Fehlermeldung ausgegeben,
+dass nicht genügend Guthaben auf dem Konto vorhanden ist.
