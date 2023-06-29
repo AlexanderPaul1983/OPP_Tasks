@@ -1,7 +1,7 @@
 package EasyTasks;
 
 public class Nutzer implements AbstrakteStrategie {
-private  AbstrakteStrategie strategie;
+private final AbstrakteStrategie strategie;
 
 
     public Nutzer(AbstrakteStrategie strategie) {
