@@ -1,9 +1,16 @@
 package EasyTasks;
 
 public class Nutzer implements AbstrakteStrategie {
-public AbstrakteStrategie strategie;
+private  AbstrakteStrategie strategie;
 
-public void operation(){
-    strategie.operation();
-};
+
+    public Nutzer(AbstrakteStrategie strategie) {
+        this.strategie = strategie;
+
+    }
+
+    @Override
+    public void operation() {
+        strategie.operation();
+    }
 }
