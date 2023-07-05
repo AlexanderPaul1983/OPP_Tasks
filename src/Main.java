@@ -3,6 +3,7 @@ import EasyTasks.*;
 public class Main {
     public static void main(String[] args) {
 
+        // Singleton Patter
         Singleton Ludwig = Singleton.getInstance();
         Ludwig.setName("Ludwig");
         Ludwig.Befehl1();

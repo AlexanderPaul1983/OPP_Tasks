@@ -20,6 +20,6 @@ public class Singleton {
         System.out.println(name + " Ich befehle");
     }
     public void Befehl2(){
-        System.out.println("Ich befehle nicht");
+        System.out.println( name + "Ich befehle nicht");
     }
 }
