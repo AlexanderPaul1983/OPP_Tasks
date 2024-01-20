@@ -1,16 +1,18 @@
 import EasyTasks.*;
+import Opp_Tasks_and_Patterns.Auto;
 
 public class Main {
     public static void main(String[] args) {
 
-        // Singleton Patter
-        Singleton Ludwig = Singleton.getInstance();
-        Ludwig.setName("Ludwig");
-        Ludwig.Befehl1();
-        Singleton Heinrich = Singleton.getInstance();
-        Heinrich.setName("Heinrich");
-        Heinrich.Befehl1();
-        Ludwig.Befehl1();
+        Auto vw = new Auto("Volkswagen", "Passat");
+        Auto mers = new Auto("Mercedes", "S350");
+
+        vw.zeigeInfos();
+
+        vw.fahre(150);
+
+        vw.zeigeInfos();
+
 
 
 
