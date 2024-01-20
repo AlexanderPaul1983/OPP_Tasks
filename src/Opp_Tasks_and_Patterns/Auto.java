@@ -1,31 +1,31 @@
 package Opp_Tasks_and_Patterns;
 
-public class Auto {
+public class Auto extends Fahrzeug {
+    boolean sitzHeizung;
 
-    // Attributen
-
-    private  String marke;
-    private String modell;
-    private int kilometerstand;
-
-    // Konstruktor
-
-    public Auto(String marke, String modell){
-        this.marke = marke;
-        this.modell = modell;
-        this.kilometerstand = 0;
+    public Auto(int motorVolumen, String farbe, int whealsAnzahl, int key, String marke, String modell, int kilometerstand, boolean sitzHeizung) {
+        super(motorVolumen, farbe, whealsAnzahl, key, marke, modell, kilometerstand);
+        this.sitzHeizung = sitzHeizung;
     }
 
-    // Methoden
-
-    public void fahre (int gefahreneKilometern){
-        kilometerstand += gefahreneKilometern;
+    public void scheibenWischen(){
+        System.out.println("wischi-wasche");
     }
-    public void zeigeInfos(){
-        System.out.println("Hersteller: " + marke + "\n" + "Autotyp ist " + modell + " mit einem Kilometerstand von " +
-                kilometerstand + "km");
-    }
-    // Getter und Setter
 
+    public boolean isSitzHeizung() {
+        return sitzHeizung;
+    }
+
+    public void setSitzHeizung(boolean sitzHeizung) {
+        this.sitzHeizung = sitzHeizung;
+    }
 }
+
+
+
+
+
+
+
+
 
