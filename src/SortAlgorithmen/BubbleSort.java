@@ -8,14 +8,13 @@ public class BubbleSort {
         // [2,3,7,0,49,6]
         int flag = arrayList.size();
         while (flag != 0) {
-
-            for (int i = 0; i < arrayList.size(); i++) {
-                if (arrayList.get(i) <= arrayList.get(i + 1)) {
-                    flag--;
-                    continue;
-                } else {
-                    arrayList.add(i, arrayList.get(i + 1));
-                    flag--;
+            flag = 0;
+            for (int i = 0; i < arrayList.size() - 1; i++) {
+                if (arrayList.get(i) > arrayList.get(i + 1)) {
+                    int temp = arrayList.get(i);
+                    arrayList.set(i, arrayList.get(i + 1));
+                    arrayList.set(i + 1, temp);
+                    flag++;
                 }
             }
         }
